@@ -1,0 +1,40 @@
+﻿@model SOLES2.Models.ViewModels.LinEq
+
+@{
+    ViewBag.Title = "test";
+}
+
+<h2>test</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>LinEq</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Expression)
+        </div>
+        <div class="editor-field">
+            @Html.TextAreaFor(model => model.Expression)
+            @Html.ValidationMessageFor(model => model.Expression)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Size)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Size)
+            @Html.ValidationMessageFor(model => model.Size)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

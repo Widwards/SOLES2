@@ -1,0 +1,41 @@
+﻿@model SOLES2.Models.ViewModels.LinEq
+@{
+    ViewBag.Title = "System of linear equations solver";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="well col-lg-8 col-lg-offset-2">
+    <form action="" id="ExpressionForm" class="form-horizontal">
+        <fieldset>
+            <legend>
+                <h3>Linear Equation</h3>
+            </legend>
+            <h4>What is linear equation?</h4>
+            A "system" of equations is a set or collection of equations that you deal with all together at once. Linear equations (ones that graph as straight lines) are simpler than non-linear equations, and the simplest linear system is one with two equations and two variables.
+        <h4>How to solve?</h4>
+            <div id="tip">
+            </div>
+            Just enter your linear equations in the text area below. One equation for the line.
+        Like this:
+        <blockquote>
+            <span class="equation">21x-45y-3,5z=10<br>
+                12x-16y+21z=-16<br>
+                14x+13y-8z=10</span>
+        </blockquote>
+
+            Or this:
+        <blockquote>
+            <span class="equation">21x1-45x2-3,5x3=10<br>
+                12x1-16x2+21x3=-16<br>
+                14x1+13x2-8x3=10</span>
+        </blockquote>
+            and get the answer!
+            
+        <textarea name="Expression" class="form-control" rows="6" id="expression" placeholder="enter your system of linear equation: one equation per line!"></textarea>
+            <input type="button" value="Solve" class="btn btn-sm btn-success" id="btn-solve" /><input type="reset" value="clear" class="btn btn-sm btn-danger" style="float: right" />
+        </fieldset>
+    </form>
+    <div id="solution"></div>
+
+</div>
+

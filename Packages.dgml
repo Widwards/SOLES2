@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="SOLES2" Label="SOLES2" Category="Проект" />
+    <Node Id="jQuery 2.0.3" Label="jQuery 2.0.3" Category="Пакет" />
+    <Node Id="jQuery.UI.Combined 1.10.3" Label="jQuery.UI.Combined 1.10.3" Category="Пакет" />
+    <Node Id="jQuery.Validation 1.11.1" Label="jQuery.Validation 1.11.1" Category="Пакет" />
+    <Node Id="Microsoft.AspNet.Mvc 4.0.20710.0" Label="Microsoft.AspNet.Mvc 4.0.20710.0" Category="Пакет" />
+    <Node Id="Microsoft.AspNet.Mvc.FixedDisplayModes 1.0.0" Label="Microsoft.AspNet.Mvc.FixedDisplayModes 1.0.0" Category="Пакет" />
+    <Node Id="Microsoft.AspNet.Mvc.ru 4.0.20710.0" Label="Microsoft.AspNet.Mvc.ru 4.0.20710.0" Category="Пакет" />
+    <Node Id="Microsoft.AspNet.Razor 2.0.20715.0" Label="Microsoft.AspNet.Razor 2.0.20715.0" Category="Пакет" />
+    <Node Id="Microsoft.AspNet.Razor.ru 2.0.20715.0" Label="Microsoft.AspNet.Razor.ru 2.0.20715.0" Category="Пакет" />
+    <Node Id="Microsoft.AspNet.WebApi 4.0.20710.0" Label="Microsoft.AspNet.WebApi 4.0.20710.0" Category="Пакет" />
+    <Node Id="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Label="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Category="Пакет" />
+    <Node Id="Microsoft.AspNet.WebApi.Client.ru 4.0.20710.0" Label="Microsoft.AspNet.WebApi.Client.ru 4.0.20710.0" Category="Пакет" />
+    <Node Id="Microsoft.AspNet.WebApi.Core 4.0.20710.0" Label="Microsoft.AspNet.WebApi.Core 4.0.20710.0" Category="Пакет" />
+    <Node Id="Microsoft.AspNet.WebApi.Core.ru 4.0.20710.0" Label="Microsoft.AspNet.WebApi.Core.ru 4.0.20710.0" Category="Пакет" />
+    <Node Id="Microsoft.AspNet.WebApi.WebHost 4.0.20710.0" Label="Microsoft.AspNet.WebApi.WebHost 4.0.20710.0" Category="Пакет" />
+    <Node Id="Microsoft.AspNet.WebApi.WebHost.ru 4.0.20710.0" Label="Microsoft.AspNet.WebApi.WebHost.ru 4.0.20710.0" Category="Пакет" />
+    <Node Id="Microsoft.AspNet.WebPages 2.0.20710.0" Label="Microsoft.AspNet.WebPages 2.0.20710.0" Category="Пакет" />
+    <Node Id="Microsoft.AspNet.WebPages.ru 2.0.20710.0" Label="Microsoft.AspNet.WebPages.ru 2.0.20710.0" Category="Пакет" />
+    <Node Id="Microsoft.Net.Http 2.0.20710.0" Label="Microsoft.Net.Http 2.0.20710.0" Category="Пакет" />
+    <Node Id="Microsoft.Net.Http.ru 2.0.20710.0" Label="Microsoft.Net.Http.ru 2.0.20710.0" Category="Пакет" />
+    <Node Id="Microsoft.Web.Infrastructure 1.0.0.0" Label="Microsoft.Web.Infrastructure 1.0.0.0" Category="Пакет" />
+    <Node Id="Newtonsoft.Json 4.5.11" Label="Newtonsoft.Json 4.5.11" Category="Пакет" />
+    <Node Id="Twitter.Bootstrap 3.0.0" Label="Twitter.Bootstrap 3.0.0" Category="Пакет" />
+  </Nodes>
+  <Links>
+    <Link Source="jQuery.UI.Combined 1.10.3" Target="jQuery 2.0.3" Category="Зависимость пакета" />
+    <Link Source="jQuery.Validation 1.11.1" Target="jQuery 2.0.3" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.Mvc 4.0.20710.0" Target="Microsoft.AspNet.WebPages 2.0.20710.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.Mvc 4.0.20710.0" Target="Microsoft.AspNet.Razor 2.0.20715.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.Mvc.FixedDisplayModes 1.0.0" Target="Microsoft.AspNet.Mvc 4.0.20710.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.Mvc.ru 4.0.20710.0" Target="Microsoft.AspNet.Mvc 4.0.20710.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.Razor.ru 2.0.20715.0" Target="Microsoft.AspNet.Razor 2.0.20715.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.WebApi 4.0.20710.0" Target="Microsoft.AspNet.WebApi.WebHost 4.0.20710.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Target="Microsoft.Net.Http 2.0.20710.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Target="Newtonsoft.Json 4.5.11" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.WebApi.Client.ru 4.0.20710.0" Target="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.WebApi.Core 4.0.20710.0" Target="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.WebApi.Core.ru 4.0.20710.0" Target="Microsoft.AspNet.WebApi.Core 4.0.20710.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.WebApi.WebHost 4.0.20710.0" Target="Microsoft.Web.Infrastructure 1.0.0.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.WebApi.WebHost 4.0.20710.0" Target="Microsoft.AspNet.WebApi.Core 4.0.20710.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.WebApi.WebHost.ru 4.0.20710.0" Target="Microsoft.AspNet.WebApi.WebHost 4.0.20710.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.WebPages 2.0.20710.0" Target="Microsoft.Web.Infrastructure 1.0.0.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.WebPages 2.0.20710.0" Target="Microsoft.AspNet.Razor 2.0.20715.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.WebPages.ru 2.0.20710.0" Target="Microsoft.AspNet.WebPages 2.0.20710.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.Net.Http.ru 2.0.20710.0" Target="Microsoft.Net.Http 2.0.20710.0" Category="Зависимость пакета" />
+    <Link Source="Twitter.Bootstrap 3.0.0" Target="jQuery 2.0.3" Category="Зависимость пакета" />
+    <Link Source="SOLES2" Target="jQuery.UI.Combined 1.10.3" Category="Установленный пакет" />
+    <Link Source="SOLES2" Target="jQuery.Validation 1.11.1" Category="Установленный пакет" />
+    <Link Source="SOLES2" Target="Microsoft.AspNet.Mvc.FixedDisplayModes 1.0.0" Category="Установленный пакет" />
+    <Link Source="SOLES2" Target="Microsoft.AspNet.Mvc.ru 4.0.20710.0" Category="Установленный пакет" />
+    <Link Source="SOLES2" Target="Microsoft.AspNet.Razor.ru 2.0.20715.0" Category="Установленный пакет" />
+    <Link Source="SOLES2" Target="Microsoft.AspNet.WebApi 4.0.20710.0" Category="Установленный пакет" />
+    <Link Source="SOLES2" Target="Microsoft.AspNet.WebApi.Client.ru 4.0.20710.0" Category="Установленный пакет" />
+    <Link Source="SOLES2" Target="Microsoft.AspNet.WebApi.Core.ru 4.0.20710.0" Category="Установленный пакет" />
+    <Link Source="SOLES2" Target="Microsoft.AspNet.WebApi.WebHost.ru 4.0.20710.0" Category="Установленный пакет" />
+    <Link Source="SOLES2" Target="Microsoft.AspNet.WebPages.ru 2.0.20710.0" Category="Установленный пакет" />
+    <Link Source="SOLES2" Target="Microsoft.Net.Http.ru 2.0.20710.0" Category="Установленный пакет" />
+    <Link Source="SOLES2" Target="Twitter.Bootstrap 3.0.0" Category="Установленный пакет" />
+  </Links>
+  <Categories>
+    <Category Id="Проект" />
+    <Category Id="Пакет" />
+  </Categories>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Проект" ValueLabel="True">
+      <Condition Expression="HasCategory('Проект')" />
+      <Setter Property="Background" Value="Blue" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Зависимость пакета" ValueLabel="True">
+      <Condition Expression="HasCategory('Зависимость пакета')" />
+      <Setter Property="Background" Value="Yellow" />
+    </Style>
+  </Styles>
+</DirectedGraph>
